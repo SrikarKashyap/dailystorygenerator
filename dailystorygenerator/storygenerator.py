@@ -31,7 +31,6 @@ class Storygenerator:
             events = f.read().splitlines()
         self.events = shuffle_and_get(events, 3)
         self.store_info()
-        print(self.begininning)
 
     def random_hero(self):
         choix = random.randint(0, len(self.all_heroes_and_villains) - 1)
