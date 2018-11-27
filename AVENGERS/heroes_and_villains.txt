@@ -11,3 +11,4 @@ Luke:Darth Vador
 Optimus Primus:Megatron
 Lloyd:Garmadon
 Kilo Ren:Rey
+Troy:Vrak

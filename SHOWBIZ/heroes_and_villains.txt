@@ -1,2 +1,16 @@
+Andrew Garfield:Tom Holland
+Tom Holland:Andrew Garfield
+John Stamos:Dave Coulier
+Dave Coulier:John Stamos
+Emma Stone:Nicole Kidman
+Nicole Kidman:Emma Stone
+Zendaya:Rihanna
+Rihanna:Zendaya
+Sofia Carson:Selena Gomez
+Selena Gomez:Sofia Carson
+Tom Cruise:Chris Hemsworth
+Chris Hemsworth:Tom Cruise
+Ben Stiller:Seinfeld
+Seinfeld:Ben Stiller
 Robert Downey Junior:Johnny Depp
 Johnny Depp:Robert Downey Junior
