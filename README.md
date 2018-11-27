@@ -43,4 +43,4 @@ python dailystorygenerator
 
 ## License
 
-Daily Hero Story Generator is licensed under the GNU GENERAL PUBLIC LICENSE Version 3 - see the [LICENSE.md](https://github.com/devdess/teammaker/blob/master/LICENSE) file for details
+Daily Hero Story Generator is licensed under the GNU GENERAL PUBLIC LICENSE Version 3 - see the [LICENSE.md](https://github.com/devdess/dailystorygenerator/blob/master/LICENSE) file for details
