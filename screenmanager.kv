@@ -257,7 +257,7 @@ MyScreenManager:
                 color: 1,1,1,.5
                 size_hint_y: None
                 readonly: True
-                text: root.beginning
+                text: root.beginning+"\n"+root.trigger
         CustButton:
             text: "Quit"
             on_press: app.stop()

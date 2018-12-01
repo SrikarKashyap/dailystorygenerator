@@ -29,34 +29,25 @@ class Storygenerator:
         self.city = shuffle_and_get(cities, 1)[0]
         with open(self.beginnings_file, "r") as f:
             beginnings = f.read().splitlines()
-        self.begininning = shuffle_and_get(beginnings, 1)[0]        
+        self.begininning = shuffle_and_get(beginnings, 1)[0]
         self.all_heroes_and_villains = from_file_to_dict(self.heroes_file)
         self.all_heroes = list(self.all_heroes_and_villains.keys())
         self.all_villains = list(self.all_heroes_and_villains.values())
         with open(self.triggers_file, "r") as f:
             triggers = f.read().splitlines()
-        self.triggers = shuffle_and_get(triggers, 3)
-        self.store_triggers(self.storing_file)
+        self.trigger = shuffle_and_get(triggers, 1)[0]
 
     def random_hero(self):
         choix = random.randint(0, len(self.all_heroes_and_villains) - 1)
         self.hero = list(self.all_heroes_and_villains.keys())[choix]
         self.villain = self.all_heroes_and_villains[self.hero]
-        self.store_triggers(self.storing_file)
 
     def new_hero(self, choice):
         self.hero = choice
         self.villain = self.all_heroes_and_villains[self.hero]
-        self.store_triggers(self.storing_file)
 
     def increase_scroller(self):
         self.scroller += 1
-
-    def store_triggers(self, store_file):
-        with open(store_file, "w") as f:
-            for i in range(len(self.triggers)-1):
-                f.write(self.triggers[i]+", ")
-            f.write(self.triggers[len(self.triggers)-1])
 
     def add_theme(self,theme_to_add):
         self.themes.append(theme_to_add)
@@ -69,7 +60,6 @@ class Storygenerator:
         return "Hero: {}\nVillain: {}\nVille: {}\nEvenements: {}".format(self.hero,
                                                                   self.villain,
                                                                   self.city,
-                                                                  self.triggers)
+                                                                  self.trigger)
     def __repr__(self):
         return str(self)
-

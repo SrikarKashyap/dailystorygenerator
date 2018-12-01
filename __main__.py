@@ -100,9 +100,6 @@ class ConfigPopup(Popup):
                 f.write(item+"\n")
 
     def write_hero_and_villains(self):
-        # directory = new_story.theme
-        # with open(directory+"/"+HEROES_FILE, "a+") as f:
-        #     f.write("{}:{}\n".format(self.ids.hero_name.text, self.ids.villain_name.text))
         write_config(HEROES_FILE, "{}:{}\n".format(self.ids.hero_name.text, self.ids.villain_name.text))
 
     def write_cities(self):
@@ -118,11 +115,13 @@ class ConfigPopup(Popup):
 
 class BeginStoryPopUp(Popup):
     beginning = StringProperty()
+    trigger = StringProperty()
 
     def __init__(self, **kwargs):
         super(BeginStoryPopUp, self).__init__(**kwargs)
         self.beginning = new_story.begininning
         self.name_villain = new_story.villain
+        self.trigger = new_story.trigger
 
 
 class StoryScreenPopup(Popup):
