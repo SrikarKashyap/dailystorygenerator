@@ -6,7 +6,7 @@ This application was created in order to generate daily a hero, a villain, an in
 
 It was designed with light autism disorder in mind, however, with its great customizability, I truly believe this application can also apply to any anxiety situation where the user has a vivid imagination and need to have a goal during his day to go through and cope with difficulties.
 
-Please bear in mind that I am not a medical practitionner, therefore I cannot vouch for the actual medical benefits of this. However, being closely acquainted with a child with light autism as well as an adult coping with anxiety, I can tell you that this application has brought us a lot of success. Hence, I decided to share it for you to use as an another tool to cope for anxiety!
+Please bear in mind that I am not a medical practitionner, however, being closely acquainted with a child with light autism as well as an adult coping with anxiety, I can tell you that this application has brought us a lot of success. Hence, I decided to share it as an another tool to deal with anxiety!
 
 See our wiki page for more details on how to use the application.
 
