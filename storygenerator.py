@@ -27,11 +27,12 @@ class Storygenerator:
         with open(self.cities_file, "r") as f:
             cities = f.read().splitlines()
         self.city = shuffle_and_get(cities, 1)[0]
+        with open(self.beginnings_file, "r") as f:
+            beginnings = f.read().splitlines()
+        self.begininning = shuffle_and_get(beginnings, 1)[0]        
         self.all_heroes_and_villains = from_file_to_dict(self.heroes_file)
         self.all_heroes = list(self.all_heroes_and_villains.keys())
         self.all_villains = list(self.all_heroes_and_villains.values())
-        self.all_beginnings = from_file_to_dict(self.beginnings_file)
-        self.begininning = self.all_beginnings[self.city]
         with open(self.triggers_file, "r") as f:
             triggers = f.read().splitlines()
         self.triggers = shuffle_and_get(triggers, 3)
