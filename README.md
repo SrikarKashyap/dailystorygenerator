@@ -33,8 +33,9 @@ python dailystorygenerator
 
 ## TO DO:
 - Add a way to insert images associated to the heroes and villains (in config mode)
-- web app (ongoing)
-- mutli-lingual: translate instructions
+- Add comments and clean up code
+- Web app (ongoing)
+- Mutli-lingual
 
 
 ## Built With
