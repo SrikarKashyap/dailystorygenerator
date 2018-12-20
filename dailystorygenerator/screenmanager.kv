@@ -35,15 +35,12 @@ MyScreenManager:
         Label:
             text: "Daily Hero Story Generator!"
             font_size: 30
-#        ConfigButton:
-#            text: "Configure The Generator"
-#            on_press: root.run_config()
         Spinner:
             background_normal: ''
             background_color: .2, .3, .4, .85
             text: "Choose Your Theme"
             font_size: 30
-            values: root.themes+["(create a theme)"]
+            values: root.themes
             id: theme
             on_text: root.spinner_clicked(theme.text)
 
@@ -117,94 +114,6 @@ MyScreenManager:
 
 #-------------- POPUPS --------------------
 
-<ConfigPopup>:
-    title: "Create Your Theme"
-    VertLayout:
-        TopButton:
-            text: "Back"
-            on_press: root.dismiss()
-        Label:
-            color: 1,1,1,1
-            font_size: 20
-            text: "Create Your Theme! Press Enter to Save Each Entry. Repeat as needed."
-            canvas.before:
-                Color:
-                    rgba: 0, 0, 0, 1
-                Rectangle:
-                    pos: self.pos
-                    size: self.size
-        HorLayout:
-            CustLabel:
-                text: "Heroes and Villains"
-            BoxLayout:
-                orientation: 'horizontal'
-                BoxLayout:
-                    orientation: 'vertical'
-                    TextInput:
-                        id : hero_name
-                        hint_text:"Enter the name of a Hero."
-                        font_size: 20
-                        size_hint: 1, 1
-                    TextInput:
-                        id : villain_name
-                        hint_text:"Enter the name of his/her Villain."
-                        font_size: 20
-                        size_hint: 1, 1
-                CustButton:
-                    text: "Enter"
-                    font_size: 10
-                    size_hint: .165, 1
-                    on_press: root.write_hero_and_villains()
-        HorLayout:
-            CustLabel:
-                text: "Cities"
-            BoxLayout:
-                orientation: 'horizontal'
-                TextInput:
-                    id: city_name
-                    hint_text: "Enter a city name."
-                    font_size: 20
-                    size_hint: .6, 1
-                CustButton:
-                    text: "Enter"
-                    font_size: 10
-                    size_hint: .1, 1
-                    on_press: root.write_cities()
-        HorLayout:
-            CustLabel:
-                text: "Story Beginnings"
-            BoxLayout:
-                orientation: 'horizontal'
-                TextInput:
-                    id: story_beginning
-                    hint_text:"Enter the beginning of a story."
-                    font_size: 20
-                    size_hint: .6, 1
-                CustButton:
-                    text: "Enter"
-                    font_size: 10
-                    size_hint: .1, 1
-                    on_press: root.write_story_beg()
-        HorLayout:
-            CustLabel:
-                text: "Triggers"
-            BoxLayout:
-                orientation: 'horizontal'
-                TextInput:
-                    id: trigger
-                    hint_text:"Enter a story trigger."
-                    font_size: 20
-                    size_hint: .6, 1
-                CustButton:
-                    text: "Enter"
-                    font_size: 10
-                    size_hint: .1, 1
-                    on_press: root.write_trigger()
-        CustButton:
-            text: "Save and quit\n(reopen app to use your theme)"
-            on_press: root.save_config()
-            on_release: app.stop()
-
 <StoryScreenPopUp>:
     title: " "
     VertLayout:
@@ -252,46 +161,12 @@ MyScreenManager:
         ScrollView:
             size_hint: 1, 1
             TextInput:
+                background_color: (.7, .8, .9, .85)
                 font_size:20
                 height: self.minimum_height
-                color: 1,1,1,.5
                 size_hint_y: None
                 readonly: True
                 text: root.beginning+"\n"+root.trigger
         CustButton:
             text: "Quit"
             on_press: app.stop()
-
-<CreateThemePopup>:
-    title: "Create A Theme"
-    size_hint: .8, .4
-    BoxLayout:
-        orientation: "vertical"
-        BoxLayout:
-            orientation: "horizontal"
-            CustLabel:
-                text: "Enter a theme name: "
-                size_hint: .8, 1
-            TextInput:
-                id: custom_theme
-                font_size: 20
-                size_hint: .8, 1
-        CustButton:
-            text: "Save"
-            on_press: root.run_config()
-            on_release: root.dismiss()
-
-<ErrorPopup>:
-    title: "ERROR!"
-    VertLayout:
-        Label:
-            text: "This Theme Is Not Ready Yet."
-            font_size: 20
-            size_hint: .8, 1
-        CustButton:
-            text: "CONFIGURE IT"
-            on_press: root.open_config()
-            on_release: root.dismiss()
-        CustButton:
-            text: "CANCEL"
-            on_press: root.dismiss()

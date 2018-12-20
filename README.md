@@ -32,13 +32,30 @@ Run:
 python dailystorygenerator
 ```
 
+To run the configuration tool:
+```
+python configuration_tool
+```
+
+
+
 
 ## TO DO:
 
-- Add a way to insert images associated to the heroes and villains (in config mode)
 - Add comments and clean up code
+- Wiki
 - Web app (ongoing)
 - Mutli-lingual
+- Create Color Change Branch and Continue working on this
+- Expand example
+- Android App and Windows package
+- Use config file (json?) for multi-language
+- Fix bug when entering hero and villain names not in order hero-villain-hero-villain
+- Change "saved popup for a log line on bottom of screen"
+- Configuration tool: Hero and villain screen too long and strenouous; use just a selection of images. test if no image, then ask for names.
+- The popups: make a general function
+
+
 
 
 
