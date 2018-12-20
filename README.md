@@ -8,7 +8,7 @@ It was designed with light autism disorder in mind, however, with its great cust
 
 Please bear in mind that I am not a medical practitioner, however, being closely acquainted with a child with light autism as well as an adult coping with anxiety, I can tell you that this application has brought us a lot of success. Hence, I decided to share it as an another tool to deal with anxiety!
 
-My initial goal was to have an application where the user selects a hero and villain pair in the morning, and a city, story beginning and story trigger were pulled out randomly to create a daily story to bring about to the day. See our wiki page for more details on how to use the application.
+My initial goal was to have an application where the user selects a hero and villain pair in the morning, and a city, story beginning and story trigger were pulled out randomly to create a daily story to bring about to the day. See our [wiki page](https://github.com/devdess/dailystorygenerator/wiki) for more details on how to use the application.
 
 There is a very simple example to use, but the force of the application relies in it's customization, where we encourage creativity. Should you need a more complete version with more story beginnings and triggers, [write to me](mailto:devdessca@gmail.com) and I can provide you with more examples.
 
