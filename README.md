@@ -52,9 +52,7 @@ python configuration_tool
 - Use config file (json?) for multi-language
 - Fix bug when entering hero and villain names not in order hero-villain-hero-villain
 - Change "saved popup for a log line on bottom of screen"
-- Configuration tool: Hero and villain screen too long and strenouous; use just a selection of images. test if no image, then ask for names.
 - The popups: make a general function
-- Adding images change function in configuration_tool
 
 
 
